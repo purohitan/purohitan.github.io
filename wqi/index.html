@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <title>Water Quality Index</title>
+    <title>Dynamic Load</title>
     
     <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
     <script type="text/javascript">
         var vizList = ["https://public.tableau.com/profile/anand.purohit#!/vizhome/CA_Water_Quality_MCL1_FINAL/CountyDB",
-		       "https://public.tableau.com/profile/anand.purohit#!/vizhome/CA_Water_Quality_MCL2_FINAL/CountyDB"
+                       "https://public.tableau.com/profile/anand.purohit#!/vizhome/CA_Water_Quality_MCL2_FINAL/CountyDB",
 			];
         
         var viz,
@@ -40,12 +40,11 @@
 </head>
 
 <body onload="createViz(0);">
-    <div id="vizContainer" style="width:800px; height:600px;"></div>
+    <div id="vizContainer" style="width:1200px; height:900px;"></div>
     <div id="controls" style="padding:20px;">
-        <button style="width:100px;" onclick="javascript:createViz(-1);">DashBoard1</button>
-        <button style="width:100px;" onclick="javascript:createViz(1);">DashBoard2</button>
+        <button style="width:100px;" onclick="javascript:createViz(-1);">Previous</button>
+        <button style="width:100px;" onclick="javascript:createViz(1);">Next</button>
     </div>
 </body>
 
 </html>
-UC Davis Data Analytics Camp © 2020 Phil Mark Crish Joe Anand
